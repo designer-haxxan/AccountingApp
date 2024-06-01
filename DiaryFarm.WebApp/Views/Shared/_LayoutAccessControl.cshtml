@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accounting App</title>
+    <!-- Favicons -->
+    <link href="~/adminpanelsd/img/favicon.png" rel="icon">
+    <link href="~/adminpanelsd/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="~/adminpanelsd/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/adminpanelsd/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/adminpanelsd/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/adminpanelsd/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="~/adminpanelsd/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="~/adminpanelsd/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/adminpanelsd/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!--Toastr CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" asp-append-version="true" />
+
+    <!-- Template Main CSS File -->
+    <link href="~/adminpanelsd/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <!-- Vendor JS Files -->
+    <script src="~/adminpanelsd/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="~/adminpanelsd/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/adminpanelsd/vendor/chart.js/chart.umd.js"></script>
+    <script src="~/adminpanelsd/vendor/echarts/echarts.min.js"></script>
+    <script src="~/adminpanelsd/vendor/quill/quill.min.js"></script>
+    <script src="~/adminpanelsd/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="~/adminpanelsd/vendor/tinymce/tinymce.min.js"></script>
+    <script src="~/adminpanelsd/vendor/php-email-form/validate.js"></script>
+
+    <!--Jquery CDN-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+    <!-- Template Main JS File -->
+    <script src="~/adminpanelsd/js/main.js"></script>
+
+
+    <!--Toastr JS CDN-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

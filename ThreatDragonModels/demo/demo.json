@@ -10,17 +10,247 @@
     "contributors": [],
     "diagrams": [
       {
-        "id": 0,
+        "id": 2,
         "title": "New STRIDE diagram",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 650,
+              "y": 210
+            },
+            "size": {
+              "width": 110,
+              "height": 60
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "nop"
+              }
+            },
+            "id": "759e2ddd-a84f-4c7e-abd1-b6a44f01fb94",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "nop",
+              "description": "deskcjdkskjfsd",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 190,
+              "y": 80
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "32d8ee8d-212e-4af2-88f2-48a92e0203a9",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 420,
+              "y": 110
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "jhkjhhkjhjhk"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": "4 3"
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": "4 3"
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "9a0ddd8d-70ba-401f-8cd0-7092118cd762",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Store",
+              "name": "jhkjhhkjhjhk",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": true,
+              "isEncrypted": true,
+              "isSigned": true,
+              "storesCredentials": true,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "2622038d-d802-4a0f-ba82-0169847c8829",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "e93fa17e-0c96-4e32-9152-c38c7162853b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "e84a1543-4c8d-44bc-8966-39e7bc018d98",
+            "source": {
+              "cell": "32d8ee8d-212e-4af2-88f2-48a92e0203a9"
+            },
+            "target": {
+              "cell": "9a0ddd8d-70ba-401f-8cd0-7092118cd762"
+            },
+            "vertices": [
+              {
+                "x": 90,
+                "y": 210
+              },
+              {
+                "x": 110,
+                "y": 230
+              },
+              {
+                "x": 190,
+                "y": 230
+              },
+              {
+                "x": 220,
+                "y": 210
+              },
+              {
+                "x": 290,
+                "y": 210
+              },
+              {
+                "x": 340,
+                "y": 190
+              },
+              {
+                "x": 360,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "7a5b023e-6248-4620-8a26-1db119873cad",
+            "source": {
+              "cell": "9a0ddd8d-70ba-401f-8cd0-7092118cd762"
+            },
+            "target": {
+              "cell": "759e2ddd-a84f-4c7e-abd1-b6a44f01fb94"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 200
+              },
+              {
+                "x": 600,
+                "y": 200
+              }
+            ]
+          }
+        ]
       }
     ],
-    "diagramTop": 1,
+    "diagramTop": 3,
     "reviewer": "ahmad",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
